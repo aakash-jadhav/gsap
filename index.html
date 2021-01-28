@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation</title>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"
+      defer
+    ></script>
+    <script src="app.js" defer></script>
+    <style>
+      body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+      }
+      .header {
+        height: 15vh;
+        background-color: crimson;
+      }
+      .links {
+        font-size: 1.8em;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
+        color: white;
+        cursor: pointer;
+      }
+      .content {
+        flex-grow: 1;
+        display: flex;
+        justify-content: space-between;
+      }
+      .button {
+        align-self: center;
+        cursor: pointer;
+        padding: 2em;
+        background-color: coral;
+        color: antiquewhite;
+        border-radius: 10px;
+      }
+      .sidebar {
+        background-color: lightseagreen;
+        width: 15vh;
+      }
+      .footer {
+        transform: translateY(100%);
+        height: 15vh;
+        background-color: dodgerblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="links">
+        <div class="link">Link 1</div>
+        <div class="link">Link 2</div>
+        <div class="link">Link 3</div>
+      </div>
+    </div>
+    <div class="content">
+      <div class="sidebar left"></div>
+      <button class="button">Reverse!</button>
+      <div class="sidebar right"></div>
+    </div>
+    <div class="footer"></div>
+  </body>
+</html>
